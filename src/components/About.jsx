@@ -1,6 +1,5 @@
 import { Code, Projector } from 'lucide-react';
 import React from 'react';
-import Resume from '../components/resume.pdf'
 const About = () => {
   return (
     <section id="about" className="min-h-screen font-bold text-3xl pt-14 text-glow">
@@ -21,7 +20,7 @@ const About = () => {
           </p>
           <div className="flex justify-center md:justify-start items-center pt-4 gap-3">
             <a href="#contact" className="cosmic-button w-[140px] p-1 text-sm font-bold flex items-center justify-center ">Get in Touch</a>
-            <a href={Resume} download='AJITH_TS_RESUME'  className="cosmic-button text-primary bg-primary/20 border-2 border-primary justify-center flex w-[140px] p-1 text-sm font-bold">Download CV</a>
+            <a   className="cosmic-button text-primary bg-primary/20 border-2 border-primary justify-center flex w-[140px] p-1 text-sm font-bold">Download CV</a>
           </div>
         </div>
 

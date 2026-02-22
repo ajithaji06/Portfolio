@@ -19,9 +19,7 @@ const HeroSection = () => {
       {/* Description */}
       <div className="max-w-[650px] w-full flex justify-center">
         <p className="text-glow opacity-0 animate-fade-in-delay-3 text-sm sm:text-base md:text-xl leading-relaxed">
-          Passionate and detail-oriented Front-End Developer seeking an entry-level
-          position to leverage skills in HTML, CSS, JavaScript, and React.js to build
-          responsive, user-friendly web applications.
+          I’m a Software Developer with hands-on experience building scalable web applications using React.js, Vue 3, Node.js, Java, and SQL.
         </p>
       </div>
 

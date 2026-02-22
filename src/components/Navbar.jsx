@@ -21,26 +21,27 @@ const Navbar = () => {
           href="#hero"
           className="flex flex-col text-primary font-bold md:text-3xl text-lg leading-tight"
         >
-          <span className="text-glow text-foreground animate-pulse">AJITH !</span>
+          <span className="text-glow text-foreground animate-pulse">AJITH TS</span>
           <span className="text-sm md:text-base text-muted-foreground">
-            FRONT END DEVELOPER
+          SOFTWARE DEVELOPER
           </span>
         </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6">
-          
           {NavItems.map((item, index) => (
             <a
               href={item.href}
               key={index}
-              className="font-medium hover:text-primary text-glow transition-all duration-200"
+              className="font-medium underline hover:text-primary text-glow transition-all duration-200"
             >
               {item.name}
-            </a>
-           
+            </a> 
           ))}
-           <BlackWhite className="m-3 ml-2 p-4"/>
+        </div>
+    
+        <div>
+            <BlackWhite className="m-3 ml-2 p-4"/>
         </div>
 
         {/* Mobile Menu Button */}
@@ -63,7 +64,7 @@ const Navbar = () => {
             href={item.href}
             key={index}
             onClick={() => setismenu(false)}
-            className="text-3xl  font-semibold hover:text-foreground transition-colors"
+            className="text-3xl underline  font-semibold hover:text-foreground transition-colors"
           >
             {item.name}
           </a>

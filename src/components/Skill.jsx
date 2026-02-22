@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 
 const skills = [
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
+  { name: "HTML/CSS", level: 100, category: "frontend" },
+  { name: "JavaScript", level: 100, category: "frontend" },
+  { name: "React js", level: 100, category: "frontend" },
+  { name: "Vue js", level: 100, category: "frontend" },
   { name: "Tailwind CSS", level: 95, category: "frontend" },
+  { name: "Material UI", level: 100, category: "frontend" },
   { name: "Redux Toolkit", level: 90, category: "frontend" },
-  { name: "Axios", level: 90, category: "frontend" },
   { name: "Java", level: 95, category: "backend" },
+  { name: "Nodejs", level: 95, category: "backend" },
+  { name: "Express js", level: 95, category: "backend" },
   { name: "MySQL", level: 90, category: "backend" },
   { name: "Spring Boot", level: 90, category: "backend" },
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "VS Code", level: 90, category: "tools" },
+  { name: "GitHub", level: 90, category: "tools" },
+  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Postman", level: 90, category: "tools" },
+  { name: "Docker", level: 80, category: "tools" },
+  { name: "Vercel", level: 80, category: "tools" },
   { name: "ChatGPT", level: 90, category: "tools" },
 ];
 
@@ -27,7 +33,7 @@ const Skill = () => {
 
   return (
     <section id="skills" className="min-h-screen font-bold text-3xl text-glow px-4 py-8 mt-3">
-      <h1 className="text-2xl md:text-3xl mb-8 text-center">
+      <h1 className="text-2xl md:text-3xl mb-8 mt-16 text-center">
         My <span className="text-primary">Skills</span>
       </h1>
 

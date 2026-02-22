@@ -53,7 +53,7 @@ const ContactDetails = () => {
   return (
     <div id='contact' className="min-h-screen w-full flex flex-col items-center gap-6 px-4 py-10 mt-10">
       {/* Header */}
-      <div className="text-center max-w-xl">
+      <div className="text-center max-w-xl mt-13">
         <h1 className="text-3xl font-bold text-glow">
           Get in <span className="text-primary">Touch</span>
         </h1>
@@ -62,10 +62,10 @@ const ContactDetails = () => {
         </p>
       </div>
 
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-12'>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-6'>
         {/* Contact Info */}
-        <div className='flex flex-col justify-evenly items-center gap-4'>
-          <h2 className='text-2xl font-bold'>Contact Information</h2>
+        <div className='flex flex-col justify-evenly items-center gap-2'>
+          <h2 className='text-xl font-bold'>Contact Information</h2>
 
           {/* Info Item */}
           {[
@@ -73,11 +73,11 @@ const ContactDetails = () => {
             { icon: <MdEmail size={25} className='text-primary' />, label: 'Email', value: 'ajithtsajith3@gmail.com' },
             { icon: <CiLocationOn size={25} className='text-primary' />, label: 'Location', value: 'Bangalore, Karnataka' },
           ].map((item, i) => (
-            <div key={i} className='flex items-center gap-4 w-[280px] p-2'>
-              <div className='bg-primary/10 flex justify-center items-center rounded-full w-[50px] h-[50px]'>
+            <div key={i} className='flex items-center gap-2 w-[280px] p-2'>
+              <div className='bg-primary/10 flex justify-center items-center rounded-full w-[40px] h-[40px]'>
                 {item.icon}
               </div>
-              <div className='flex flex-col font-semibold text-lg'>
+              <div className='flex flex-col font-semibold text-md'>
                 <span>{item.label}</span>
                 <span>{item.value}</span>
               </div>
@@ -97,8 +97,8 @@ const ContactDetails = () => {
         </div>
 
         {/* Contact Form */}
-        <form onSubmit={handleMail} className='bg-primary/20 w-full max-w-md z-40 p-6 rounded-lg flex flex-col gap-4'>
-          <h2 className='text-2xl font-bold mb-2'>Send a Message</h2>
+        <form onSubmit={handleMail} className='bg-primary/20 w-full max-w-md z-40 p-6 rounded-lg flex flex-col gap-2'>
+          <h2 className='text-xl font-bold mb-2'>Send a Message</h2>
           <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} className={inputClass} />
           <input type="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} />
           <input type="text" placeholder="Subject" value={title} onChange={(e) => setTitle(e.target.value)} className={inputClass} />
